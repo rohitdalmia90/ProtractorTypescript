@@ -1,0 +1,36 @@
+{
+  "name": "typescript_protractor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf typeScript/",
+    "clean-build": "npm run clean && npm run build",
+    "test": "protractor JSFiles/configuration.js",
+    "pretest": "tsc",
+    "protractor": "./node_modules/protractor/built/cli.js",
+    "webdriver-update": "./node_modules/.bin/webdriver-manager update"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "protractor": "^5.4.2",
+    "typescript": "^3.2.4",
+    "jasmine": "~3.3.1",
+    "@types/jasmine": "^3.3.5",
+    "@types/jasminewd2": "~2.0.6",
+    "ts-node": "^8.10.0",
+    "@types/node": "^10.7.1",
+    "cucumber": "^6.0.5",
+    "cucumber-html-reporter": "^5.2.0",
+    "protractor-cucumber-framework": "^6.2.0",
+    "@types/cucumber": "^4.0.4",
+    "chai": "^4.2.0",
+    "chai-as-promised": "7.1.1"
+   
+  },
+  "devDependencies": {
+    "@types/node": "^10.7.1",
+    "typescript": "^3.2.4"
+  }
+}
